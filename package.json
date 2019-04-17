@@ -1,0 +1,22 @@
+{
+  "name": "test_proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenix157/test_proj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kenix157/test_proj/issues"
+  },
+  "homepage": "https://github.com/Kenix157/test_proj#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
