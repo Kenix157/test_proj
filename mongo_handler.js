@@ -4,12 +4,14 @@ var connection;
 
 module.exports = 
 {
-	connectToServer: function(url, callback) 
+	connectToServer: function(url, db_name, callback) 
 	{
 		MongoClient.connect(url, { useNewUrlParser: true }, function(err, client) {
-			connection = client;
+			var db = client.db(db_name);
 			
-			callback(err, client);
+			connection = db;
+		
+			callback(err, db);
 		} );
 	},
 
